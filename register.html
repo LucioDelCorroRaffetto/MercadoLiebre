@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <Header>
+        <!-- Imagen logo -->
+        <img src="Img/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+
+        <!-- Aca va el Nav  -->
+        <div> para poner la barra de búsqueda</div>
+
+        <!-- Propaganda -->
+        <div>Comprá en cuotas y sin tarjeta de crédito</div>
+
+        <!-- Primer List del Nav -->
+        <ul>
+            <li><a href="https://www.mercadolibre.com.ar/ofertas#nav-header" target="_blank">Ofertas</a></li>
+            <li><a href="https://www.mercadolibre.com.ar/tiendas-oficiales" target="_blank">Tiendas Oficiales</a></li>
+            <li><a href="https://www.mercadolibre.com.ar/syi/core/list#nav-header" target="_blank">Vender</a></li>
+            <li><a href="https://www.mercadolibre.com.ar/ayuda#nav-header" target="_blank">Ayuda</a></li>
+
+        </ul>
+
+        <!-- Segundo List del Nav -->
+        <ul>
+            <li><a href="https://www.mercadolibre.com.ar/registration?confirmation_url=https%3A%2F%2Fwww.mercadolibre.com.ar%2F#nav-header"
+                    target="_blank">Creá tu cuenta</a></li>
+            <li><a href="https://www.mercadolibre.com.ar/registration?confirmation_url=https%3A%2F%2Fwww.mercadolibre.com.ar%2F#nav-header"
+                    target="_blank">Ingresá</a></li>
+            <li><a href="https://myaccount.mercadolibre.com.ar/purchases/list#nav-header" target="_blank">Mis
+                    compras</a></li>
+        </ul>
+    </Header>
+    <main>
+        <!-- Registro de Usuario -->
+        <form action="" method="get">
+
+            <!-- Nombre y Apellido -->
+            <label for="Nombre">Ingrese Su Nombre y Apellido:</label>
+            <input type="text" placeholder="Ingrese Su Nombre y Apellido" name="Nombre" required><br>
+
+            <!-- Nombre de Usuario -->
+            <label for="Usuario">Ingrese Su Nombre de Usuari@:</label>
+            <input type="text" placeholder="Ingrese Su Nombre de Usuario" name="Usuario" required><br>
+
+            <!-- Direccion -->
+            <label for="Usuario">Ingrese Su Direccion:</label>
+            <input type="address" placeholder="Ingrese Su Direccion" name="Direccion" required><br>
+
+            <!-- Email -->
+            <label for="Email">Ingrese Su Email:</label>
+            <input type="email" placeholder="Ingrese Su Email" name="Email"><br>
+
+            <!-- Fecha de Nacimiento -->
+            <label for="Nacimiento">Ingrese su Fecha de Nacimiento:</label>
+            <input type="date" placeholder="Ingrese su Fecha de Nacimiento" name="Nacimiento" required><br>
+
+            <!-- Perfil del usuario -->
+            <label for="Perfil">Usted Desea...</label>
+            <input type="radio" placeholder="Perfil del usuario" name="Perfil">Comprar
+            <input type="radio" placeholder="Perfil del usuario" name="Perfil">Vender<br>
+
+            <!-- Categorías de interés -->
+            <label for="">Ingrese sus categorías de interés: </label>
+            <input type="checkbox" placeholder="Ingrese sus categorías de interés" name="Electro">Electro
+            <input type="checkbox" placeholder="Ingrese sus categorías de interés" name="Moda">Moda
+            <input type="checkbox" placeholder="Ingrese sus categorías de interés" name="Hogar">Hogar
+            <input type="checkbox" placeholder="Ingrese sus categorías de interés" name="Juguetería">Juguetería
+            <input type="checkbox" placeholder="Ingrese sus categorías de interés" name="Vida sana">Vida sana<br>
+
+            <!-- Foto de usuario -->
+            <label for="Foto">Ingrese una foto de usuario:</label>
+            <input type="file" placeholder="Ingrese una foto de usuario" name="Foto" accept="image/jpeg, image/png"
+                required><br>
+
+            <!-- Contraseña -->
+            <label for="Contraseña">Ingrese su Contraseña:</label>
+            <input type="password" placeholder="Ingrese su Contraseña" name="Contraseña" required><br>
+
+            <!-- Confirmación de Contraseña -->
+            <label for="Confirmación">Confirme su Contraseña:</label>
+            <input type="password" placeholder="Confirme su Contraseña" name="Confirmación" required><br>
+
+            <!-- Boton de Enviar -->
+            <button href="home.html" type="submit">Enviar</button>
+
+            <!-- Boton de Borrar -->
+            <Button type="reset">Borrar</Button>
+
+        </form>
+    </main>
+</body>
+
+</html>
