@@ -4,62 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Ingresa</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
     <Header>
-        <!-- Imagen logo -->
-        <div>
-            <img src="Img/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
-        </div>
-        <!-- Aca va el Nav  -->
-        <div> para poner la barra de búsqueda</div>
+        <nav class="nav">
+            <!-- Imagen logo -->
+            <div class="logo">
+                <a href="home.html"><img src="Img/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
+            </div>
 
-        <!-- Propaganda -->
-        <div>Comprá en cuotas y sin tarjeta de crédito</div>
+            <!-- Aca va el searchbar  -->
+            <form class="d-flex" role="search">
+                <input size="30" class="search_bar" type="search" placeholder="Buscar productos, marcas">
+                <button class="fa-solid fa-magnifying-glass" type="submit"></button>
+            </form>
 
-        <!-- Primer List del Nav -->
-        <div>
-            <ul>
-                <li><a href="https://www.mercadolibre.com.ar/ofertas#nav-header" target="_blank">Ofertas</a></li>
-                <li><a href="https://www.mercadolibre.com.ar/tiendas-oficiales" target="_blank">Tiendas Oficiales</a>
-                </li>
-                <li><a href="https://www.mercadolibre.com.ar/syi/core/list#nav-header" target="_blank">Vender</a></li>
-                <li><a href="https://www.mercadolibre.com.ar/ayuda#nav-header" target="_blank">Ayuda</a></li>
+            <!-- Propaganda -->
+            <div class="propaganda"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de
+                crédito</div>
 
-            </ul>
-        </div>
+            <!-- Primer List del Nav -->
+            <div class="list1">
+                <ul>
+                    <li><a href="https://www.mercadolibre.com.ar/ofertas#nav-header" target="_blank">Ofertas</a></li>
+                    <li><a href="https://www.mercadolibre.com.ar/tiendas-oficiales" target="_blank">Tiendas
+                            Oficiales</a>
+                    </li>
+                    <li><a href="https://www.mercadolibre.com.ar/syi/core/list#nav-header" target="_blank">Vender</a>
+                    </li>
+                    <li><a href="https://www.mercadolibre.com.ar/ayuda#nav-header" target="_blank">Ayuda</a></li><br>
+                    <li><a href="register.html" target="_blank">Creá tu cuenta </a><i class="fa-solid fa-id-card"></i>
+                    </li>
+                    <li><a href="login.html" target="_blank">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i>
+                    </li>
+                    <li><a href="https://myaccount.mercadolibre.com.ar/purchases/list#nav-header" target="_blank">Mis
+                            compras </a><i class="fa-solid fa-basket-shopping"></i></li>
+                </ul>
+            </div>
 
-        <!-- Segundo List del Nav -->
-        <div>
-            <ul>
-                <li><a href="https://www.mercadolibre.com.ar/registration?confirmation_url=https%3A%2F%2Fwww.mercadolibre.com.ar%2F#nav-header"
-                        target="_blank">Creá tu cuenta</a></li>
-                <li><a href="https://www.mercadolibre.com.ar/registration?confirmation_url=https%3A%2F%2Fwww.mercadolibre.com.ar%2F#nav-header"
-                        target="_blank">Ingresá</a></li>
-                <li><a href="https://myaccount.mercadolibre.com.ar/purchases/list#nav-header" target="_blank">Mis
-                        compras</a></li>
-            </ul>
-        </div>
+            <!-- Burger menu -->
+            <div class="buger_menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
     </Header>
     <main>
         <div>
             <form action="" method="get">
 
                 <!-- Nombre de Usuario -->
-                <label for="Usuario">Ingrese Su Nombre de Usuari@:</label>
-                <input type="text" placeholder="Ingrese Su Nombre de Usuario" name="Usuario" required><br>
+                <input class="input" type="text" placeholder="Ingrese Su Nombre de Usuario" size="25" name="Usuario"
+                    required><br>
 
                 <!-- Contraseña -->
-                <label for="Contraseña">Ingrese su Contraseña:</label>
-                <input type="password" placeholder="Ingrese su Contraseña" name="Contraseña" required><br>
+                <input class="input" type="password" placeholder="Ingrese su Contraseña" size="25" name="Contraseña"
+                    required><br>
 
                 <!-- Boton de Enviar -->
-                <button href="home.html" type="submit">Enviar</button>
+                <button class="button" href="home.html" type="submit">Enviar</button><br>
 
             </form>
         </div>
     </main>
+    <script src="https://kit.fontawesome.com/80bbfb6dbd.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
