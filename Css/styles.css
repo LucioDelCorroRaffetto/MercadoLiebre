@@ -1,14 +1,18 @@
+/* font style */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* customizacion general */
 * {
-    margin: 2px;
-    padding: 2px;
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
+/* customizacion del nav */
 .nav {
+    padding: 10px 0 5px 10px;
     background-color: #EAC926;
     font-size: 12px;
     font-family: "Roboto", system-ui;
@@ -16,57 +20,217 @@
     font-style: normal;
 }
 
+/* customizacion logo */
 .logo {
     width: 50%;
 }
 
+/* customizacion searchbar */
 .search_bar {
-    padding: 0;
+    padding: 0 10px 0 0;
+    margin: 10px;
 }
 
+/* customizacion texto nav */
 .propaganda {
     text-align: center;
+    margin: 10px;
 }
 
+/* elimino puntos del ul del nav */
 .list1 ul {
     list-style: none;
 }
 
+/* customizacion de ul del nav */
 .list1 a {
     text-decoration: none;
     color: black;
 }
 
+/* customizacion burger menu */
 .buger_menu {
-    text-align: center;
-    background-color: #03264C;
+    padding: 10px 2px 10px 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #1259c3;
     color: white;
     width: 25px;
-    position: relative;
-    left: 47%;
+    border-radius: 10px;
 }
 
+/* color de fondo de la pagina */
 body {
     background-color: #ebebeb;
 }
 
+/* ajuste el main */
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* fuente de texto */
 p {
     font-size: 12px;
 }
 
-h1 {
-    font-size: 24px;
+/* fuente de texto para titulos */
+h1{
+    margin: 20px 0px 20px 0px;
 }
 
+h1, h3{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+/* fuente de texto precio de articulo */
 .articulo_precio {
     font-size: 18px;
 }
 
+/* fuente de texto descuento de articulo */
 .articulo_descuento {
     font-size: 16px;
 
 }
 
+/* fuente de texto descripcion de articulo */
 .articulo_descripcion {
     font-size: 16px;
+}
+
+/* customizacion del footer */
+.footer {
+    text-align: center;
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-style: italic;
+    background-color: white;
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
+}
+
+/* customizacion del footer icon */
+.footer i {
+    margin: 30px 0 20px 0;
+    opacity: 0.8;
+}
+
+/* customizacion del div del footer */
+.foot {
+    margin: 20px 15px 40px 15px;
+}
+
+/* customizacion del copyright del footer */
+.copyright {
+    text-align: left;
+}
+
+/* ajustamos la customizacion para diferentes dispositivos */
+@media screen and (max-width: 768px){
+    
+    ul{
+       display: none; 
+    }
+
+    .articulo_descripcion{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    body{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .search_bar{
+        padding: 0 100px 0 0;
+        font-size: 17px;
+    }
+    
+    .fa-solid.fa-magnifying-glass{
+        font-size: 17px;
+    }
+
+    .buger_menu{
+       display: none; 
+    }
+
+    ul{
+        display: block; 
+        font-size: large;
+    }
+
+    .propaganda{
+        font-size: large;
+    }
+
+    .articulo_descripcion{
+        display: block;
+    }
+
+    footer{
+        font-size: medium;
+    }
+
+    .foot{
+        font-size: large;
+    }
+
+    p{
+        font-size: medium;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+
+    body{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .logo{
+        width: 500px;
+    }
+
+    .search_bar{
+        padding: 0 100px 0 0;
+        font-size: 25px;
+    }
+    
+    .fa-solid.fa-magnifying-glass{
+        font-size: 25px;
+    }
+
+    .buger_menu{
+       display: none; 
+    }
+
+    ul{
+        display: block; 
+        font-size: 25px;
+    }
+
+    .propaganda{
+        font-size: 25px;
+    }
+
+    .articulo_descripcion{
+        display: block;
+    }
+
+    footer{
+        font-size: 25px;
+    }
+
+    .foot{
+        font-size: 25px;
+    }
+
+    p{
+        font-size: large;
+    }
 }

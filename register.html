@@ -22,7 +22,7 @@
             <!-- Aca va el searchbar  -->
             <form class="d-flex" role="search">
                 <input size="30" class="search_bar" type="search" placeholder="Buscar productos, marcas">
-                <button class="fa-solid fa-magnifying-glass" type="submit"></button>
+                <button class="fa-solid fa-magnifying-glass" type="submit" href="home.html"></button>
             </form>
 
             <!-- Propaganda -->
@@ -50,7 +50,7 @@
 
             <!-- Burger menu -->
             <div class="buger_menu">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars fa-xl"></i>
             </div>
         </nav>
     </Header>
@@ -59,23 +59,22 @@
         <form action="" method="get">
 
             <!-- Nombre y Apellido -->
-            <input class="input" type="text" placeholder="Ingrese Su Nombre y Apellido" size="25" name="Nombre"
-                required><br>
+            <input class="input_text" type="text" placeholder="Ingrese Su Nombre y Apellido" size="25" name="Nombre"
+                required>
 
             <!-- Nombre de Usuario -->
-            <input class="input" type="text" placeholder="Ingrese Su Nombre de Usuario" size="25" name="Usuario"
-                required><br>
+            <input class="input_text" type="text" placeholder="Ingrese Su Nombre de Usuario" size="25" name="Usuario"
+                required>
 
             <!-- Direccion -->
-            <input class="input" type="address" placeholder="Ingrese Su Direccion" size="25" name="Direccion"
-                required><br>
+            <input class="input_text" type="address" placeholder="Ingrese Su Direccion" size="25" name="Direccion" required>
 
             <!-- Email -->
-            <input class="input" type="email" placeholder="Ingrese Su Email" size="25" name="Email" required><br>
+            <input class="input_text" type="email" placeholder="Ingrese Su Email" size="25" name="Email" required><br>
 
             <!-- Fecha de Nacimiento -->
             <label for="Nacimiento">Ingrese su Fecha de Nacimiento:</label><br>
-            <input class="input" type="date" placeholder="Ingrese su Fecha de Nacimiento" name="Nacimiento"
+            <input class="input_text" type="date" placeholder="Ingrese su Fecha de Nacimiento" name="Nacimiento"
                 required><br>
 
             <!-- Perfil del usuario -->
@@ -97,25 +96,60 @@
             sana<br>
 
             <!-- Foto de usuario -->
-            <label for="Foto">Ingrese una foto de usuario:</label>
+            <label for="Foto">Ingrese una foto de usuario:</label> <br>
             <input class="input" type="file" placeholder="Ingrese una foto de usuario" name="Foto"
-                accept="image/jpeg, image/png" required><br>
+                accept="image/jpeg, image/png" required>
 
             <!-- Contraseña -->
-            <input class="input" type="password" placeholder="Ingrese su Contraseña" size="25" name="Contraseña"
-                required><br>
+            <input class="input_text" type="password" placeholder="Ingrese su Contraseña" size="25" name="Contraseña"
+                required>
 
             <!-- Confirmación de Contraseña -->
-            <input class="input" type="password" placeholder="Confirme su Contraseña" size="25" name="Confirmación"
+            <input class="input_text" type="password" placeholder="Confirme su Contraseña" size="25" name="Confirmación"
                 required><br>
 
             <!-- Boton de Enviar -->
-            <button class="button" href="home.html" type="submit">Enviar</button><br>
+            <button class="button" href="home.html" type="submit">Enviar</button>
             </div>
             <!-- Boton de Borrar -->
             <Button class="button" type="reset">Borrar</Button>
         </form>
     </main>
+    <Footer>
+        <div class="footer">
+
+            <!-- Forma de Pago -->
+            <div class="foot">
+                <i class="fa-solid fa-credit-card fa-2xl" style="color: #1259c3;"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                    siempre es
+                    seguro!</p>
+            </div>
+
+            <!-- Precio Envio -->
+            <div class="foot">
+                <i class="fa-solid fa-gift fa-2xl" style="color: #1259c3;"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                    beneficio de
+                    Mercado Puntos.</p>
+            </div>
+
+            <!-- Garantia -->
+            <div class="foot">
+                <i class="fa-solid fa-user-shield fa-2xl" style="color: #1259c3;"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                    protegid@.</p>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            </div>
+        </div>
+    </Footer>
     <script src="https://kit.fontawesome.com/80bbfb6dbd.js" crossorigin="anonymous"></script>
 </body>
 
