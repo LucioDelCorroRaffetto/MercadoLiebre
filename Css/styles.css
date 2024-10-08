@@ -8,54 +8,81 @@
     font-family: "Roboto", system-ui;
     font-weight: 400;
     font-style: normal;
+    box-sizing: border-box;
+
 }
 
-/* customizacion del nav */
-.nav {
+/* customizacion del Header */
+Header {
     padding: 10px 0 5px 10px;
     background-color: #EAC926;
     font-size: 12px;
     font-family: "Roboto", system-ui;
     font-weight: 700;
     font-style: normal;
+    padding-bottom: 10px;
 }
+
+.logo_searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 
 /* customizacion logo */
 .logo {
-    width: 50%;
+    width: 120px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 /* customizacion searchbar */
 .search_bar {
-    padding: 0 10px 0 0;
-    margin: 10px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+    width: 120px;
+    padding: 3px 0 3px 3px;
+}
+
+.search_bar button {
+    border: none;
+    background-color: white;
+    position: relative;
+    bottom: -2px;
+    left: -5px;
 }
 
 /* customizacion texto nav */
 .propaganda {
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
-    margin: 10px;
 }
 
 /* elimino puntos del ul del nav */
-.list1 ul {
+.list ul {
     list-style: none;
 }
 
 /* customizacion de ul del nav */
-.list1 a {
+.list a {
     text-decoration: none;
     color: black;
 }
 
 /* customizacion burger menu */
-.buger_menu {
+.burger_menu {
     padding: 10px 2px 10px 10px;
     margin-right: auto;
     margin-left: auto;
     background-color: #1259c3;
     color: white;
-    width: 25px;
+    width: 35px;
     border-radius: 10px;
 }
 
@@ -76,11 +103,13 @@ p {
 }
 
 /* fuente de texto para titulos */
-h1{
+h1 {
     margin: 20px 0px 20px 0px;
+    width: 100%;
 }
 
-h1, h3{
+h1,
+h3 {
     font-size: 24px;
     font-weight: bolder;
 }
@@ -129,108 +158,124 @@ h1, h3{
 }
 
 /* ajustamos la customizacion para diferentes dispositivos */
-@media screen and (max-width: 768px){
-    
-    ul{
-       display: none; 
-    }
+/* Mobile */
+@media screen and (max-width: 768px) {
 
-    .articulo_descripcion{
+    ul {
         display: none;
     }
+
+    .articulo_descripcion {
+        display: none;
+    }
+
 }
 
-@media screen and (min-width: 768px){
+/* Tablet */
+@media screen and (min-width: 768px) {
 
-    body{
+    .list {
+        display: flex;
+        justify-content: space-between;
+        font-size: medium;
+        margin: 10px;
+    }
+
+    .logo_searchbar {
+        flex-grow: 0.6;
+    }
+
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+
+    .search_bar {
+        border: none;
+        padding: 5px;
+        font-size: medium;
+        width: 200px;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .fa-solid.fa-magnifying-glass {
+        font-size: 17px;
+    }
+
+    .propaganda {
+        display: flex;
+    }
+
+    .list1,
+    .list2 {
+        display: flex;
+        justify-content: space-between;
+        width: 40vw;
+    }
+
+    .burger_menu {
+        display: none;
+    }
+
+    body {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    .search_bar{
-        padding: 0 100px 0 0;
-        font-size: 17px;
-    }
-    
-    .fa-solid.fa-magnifying-glass{
-        font-size: 17px;
-    }
-
-    .buger_menu{
-       display: none; 
-    }
-
-    ul{
-        display: block; 
-        font-size: large;
-    }
-
-    .propaganda{
-        font-size: large;
-    }
-
-    .articulo_descripcion{
+    .articulo_descripcion {
         display: block;
     }
 
-    footer{
-        font-size: medium;
+    article {
+        width: 49%;
     }
 
-    .foot{
+    p {
+        font-size: medium;
+        margin: 0 0 0 0;
+    }
+
+    footer {
+        font-size: medium;
+        display: flex;
+    }
+
+    .foot {
         font-size: large;
-    }
-
-    p{
-        font-size: medium;
     }
 }
 
+/* Desktop */
+@media screen and (min-width: 1024px) {
 
-@media screen and (min-width: 1024px){
-
-    body{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    .logo{
-        width: 500px;
-    }
-
-    .search_bar{
-        padding: 0 100px 0 0;
-        font-size: 25px;
-    }
-    
-    .fa-solid.fa-magnifying-glass{
-        font-size: 25px;
-    }
-
-    .buger_menu{
-       display: none; 
-    }
-
-    ul{
-        display: block; 
-        font-size: 25px;
-    }
-
-    .propaganda{
-        font-size: 25px;
-    }
-
-    .articulo_descripcion{
-        display: block;
-    }
-
-    footer{
-        font-size: 25px;
-    }
-
-    .foot{
-        font-size: 25px;
-    }
-
-    p{
+    .list {
+        display: flex;
+        justify-content: space-between;
         font-size: large;
+        margin: 10px;
+    }
+
+    .search_bar {
+        border: none;
+        padding: 5px;
+        font-size: medium;
+        width: 320px;
+    }
+
+    .logo {
+        width: 280px;
+    }
+
+    .propaganda {
+        font-size: large;
+    }
+
+    article {
+        width: 24%;
     }
 }
