@@ -12,6 +12,7 @@ section {
     width: 100%;
     border: 1px solid #ebebeb;
     background-color: white;
+    box-shadow: 1px 1px 10px rgb(100, 100, 100);
 }
 
 /* customizacion del articulo */
@@ -49,4 +50,27 @@ section {
 
 .precio_descuento{
     display: flex;
+}
+
+.articulo .articulo_informacion .articulo_camion i {
+    transition: ease 0.5s;
+}
+
+.articulo .articulo_informacion .articulo_descripcion {
+    display: flex;
+    align-items: flex-end;
+    display: none;
+    transition: ease 2s;
+}
+
+.articulo :hover .articulo_descripcion{
+    display: block;
+}
+
+.articulo :hover .articulo_camion i{
+    transform: rotate(90deg);
+}
+
+article :hover{
+    box-shadow: 1px 1px 10px white;
 }

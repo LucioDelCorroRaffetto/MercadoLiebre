@@ -13,43 +13,49 @@
 
 <body>
     <Header>
-        <nav class="nav">
-            <!-- Imagen logo -->
-            <div class="logo">
-                <a href="home.html"><img src="Img/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
+
+        <div class="contenedor">
+            <div class="logo_searchbar">
+                <!-- Imagen logo -->
+                <div class="logo">
+                    <a href="home.html"><img src="Img/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
+                </div>
+
+                <!-- Aca va el searchbar  -->
+                <form class="d-flex" role="search">
+                    <input  class="search_bar" type="search" placeholder="Buscar productos, marcas">
+                    <button class="fa-solid fa-magnifying-glass" type="submit" href="home.html"></button>
+                </form>
             </div>
-
-            <!-- Aca va el searchbar  -->
-            <form class="d-flex" role="search">
-                <input size="30" class="search_bar" type="search" placeholder="Buscar productos, marcas">
-                <button class="fa-solid fa-magnifying-glass" type="submit" href="home.html"></button>
-            </form>
-
             <!-- Propaganda -->
             <div class="propaganda"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de
                 crédito</div>
+            </div>
 
-            <!-- Primer List del Nav -->
-            <div class="list1">
-                <ul>
-                    <li><a href="https://www.mercadolibre.com.ar/ofertas#nav-header" target="_blank">Ofertas</a></li>
-                    <li><a href="https://www.mercadolibre.com.ar/tiendas-oficiales" target="_blank">Tiendas
+            <!-- List del Nav -->
+            <nav class="nav">
+            <div class="list">
+                <ul class="list1">
+                    <li><a href="https://www.mercadolibre.com.ar/ofertas#nav-header">Ofertas</a></li>
+                    <li><a href="https://www.mercadolibre.com.ar/tiendas-oficiales">Tiendas
                             Oficiales</a>
                     </li>
-                    <li><a href="https://www.mercadolibre.com.ar/syi/core/list#nav-header" target="_blank">Vender</a>
+                    <li><a href="https://www.mercadolibre.com.ar/syi/core/list#nav-header">Vender</a>
                     </li>
-                    <li><a href="https://www.mercadolibre.com.ar/ayuda#nav-header" target="_blank">Ayuda</a></li><br>
-                    <li><a href="register.html" target="_blank">Creá tu cuenta </a><i class="fa-solid fa-id-card"></i>
+                    <li><a href="https://www.mercadolibre.com.ar/ayuda#nav-header">Ayuda</a></li><br>
+                </ul>
+                <ul class="list2">
+                    <li><a href="register.html">Creá tu cuenta<i class="fa-solid fa-id-card"></i></a>
                     </li>
-                    <li><a href="login.html" target="_blank">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i>
+                    <li><a href="login.html">Ingresá<i class="fa-solid fa-right-to-bracket"></i></a>
                     </li>
-                    <li><a href="https://myaccount.mercadolibre.com.ar/purchases/list#nav-header" target="_blank">Mis
-                            compras </a><i class="fa-solid fa-basket-shopping"></i></li>
+                    <li><a href="https://myaccount.mercadolibre.com.ar/purchases/list#nav-header">Mis
+                            compras<i class="fa-solid fa-basket-shopping"></i></a></li>
                 </ul>
             </div>
 
             <!-- Burger menu -->
-            <div class="buger_menu">
+            <div class="burger_menu">
                 <i class="fa-solid fa-bars fa-xl"></i>
             </div>
         </nav>
@@ -74,7 +80,7 @@
     </main>
     <Footer>
         <div class="footer">
-
+            <div class="conteiner">
             <!-- Forma de Pago -->
             <div class="foot">
                 <i class="fa-solid fa-credit-card fa-2xl" style="color: #1259c3;"></i>
@@ -100,7 +106,7 @@
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
                     protegid@.</p>
             </div>
-
+        </div>
             <!-- Copyright -->
             <div class="copyright">
                 <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
