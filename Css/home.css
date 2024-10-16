@@ -12,7 +12,6 @@ section {
     width: 100%;
     border: 1px solid #ebebeb;
     background-color: white;
-    box-shadow: 1px 1px 10px rgb(100, 100, 100);
 }
 
 /* customizacion del articulo */
@@ -60,7 +59,7 @@ section {
     display: flex;
     align-items: flex-end;
     display: none;
-    transition: ease 2s;
+    transition: 5s;
 }
 
 .articulo :hover .articulo_descripcion{
@@ -72,5 +71,38 @@ section {
 }
 
 article :hover{
+    box-shadow: 1px 1px 10px rgb(100, 100, 100);
+    transition: 0.5s;
+}
+
+.articulo :hover{
+    box-shadow: 1px 1px 10px white;
+}
+
+.articulo_imagen :hover{
+    box-shadow: 1px 1px 10px white;
+}
+
+.articulo_informacion :hover{
+    box-shadow: 1px 1px 10px white;
+}
+
+.articulo_camion :hover{
+    box-shadow: 1px 1px 10px white;
+}
+
+.precio_descuento :hover{
+    box-shadow: 1px 1px 10px white;
+}
+
+.articulo_precio :hover{
+    box-shadow: 1px 1px 10px white;
+}
+
+.articulo_descuento :hover{
+    box-shadow: 1px 1px 10px white;
+}
+
+.articulo_descripcion :hover{
     box-shadow: 1px 1px 10px white;
 }
